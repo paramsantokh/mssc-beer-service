@@ -8,6 +8,6 @@ import java.util.UUID;
 /**
  * @author param singh
  */
-public interface BeerRepositories extends PagingAndSortingRepository<Beer, UUID> {
+public interface BeerRepository extends PagingAndSortingRepository<Beer, UUID> {
   
 }
