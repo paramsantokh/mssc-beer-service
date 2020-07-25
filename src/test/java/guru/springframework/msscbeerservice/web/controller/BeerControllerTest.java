@@ -36,7 +36,7 @@ class BeerControllerTest {
   
   @Test
   void saveNewBeer() throws Exception {
-    BeerDto beerDto = null;
+    BeerDto beerDto = getBeerDto();
     String beerDtoJson = objectMapper.writeValueAsString(beerDto);
     
     mockMvc.perform(post("/api/v1/beer/")
